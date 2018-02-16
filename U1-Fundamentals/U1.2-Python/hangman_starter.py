@@ -1,14 +1,14 @@
 word = input("Type a word for someone to guess: ")
 
+# Converts the word to lowercase
 word = word.lower()
+
+# Checks if only letters are present
 if(word.isalpha() == False):
 	print("That's not a word!")
 
-for idx in range(0, 50):
-	print(" ")
-
+# Some useful variables
 guesses = []
-numfails = 0
 maxfails = 7
 
 guess = input("Guess a letter: ")
