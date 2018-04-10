@@ -120,30 +120,6 @@ function processISSRequest(issInformation) {
 	document.getElementById("iss-time").innerHTML = date.toString();
 }
 
-
-function makeMovieRequest() {
-	var moviename = document.getElementById("movie-name").innerHTML;
-
-	console.log(moviename);
-
-	if(moviename === "") {
-	 	alert("You didn't write a movie!");
-	 	return;
-	}
-
-	var query = "http://bechdeltest.com/api/v1/getMoviesByTitle?title="+moviename;
-
-	query = query.replace(/ /g, "%20");
-
-	$.getJSON(query + "&callback=?", null, processMovieRequest);
-}
-
-function processMovieRequest(movieInformation) {
-	console.log("here");
-	console.log(movieInformation);
-	//document.getElementById("sunset-time").innerHTML = "Sunrise: " + sunriseInformation.results.sunrise + " UTC and Sunset: " + sunriseInformation.results.sunset + " UTC";
-}
-
 function makeSWRequest() {
 	var character = document.getElementById("sw-character").innerHTML;
 
@@ -199,11 +175,11 @@ function makeBerryRequest() {
 	 	return;
 	}
 
-	var query = "http://pokeapi.co/api/v2/berry/"+berry;
+	var query = "https://pokeapi.co/api/v2/berry/"+berry+"/";
 
 	query = query.replace(/ /g, "%20");
 
-	$.get(query + "&callback=?", null, processBerryRequest);
+	$.get(query, null, processBerryRequest);
 }
 
 function processBerryRequest(berryInformation) {
