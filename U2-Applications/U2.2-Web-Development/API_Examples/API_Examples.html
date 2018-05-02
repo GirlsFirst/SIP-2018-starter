@@ -12,35 +12,38 @@
 <body>
 	<h3>REST Countries Example</h3>
 	<p> <!-- paragraph marker added here for spacing -->
-		<textarea id="country-name" rows="1" cols ="20">thailand</textarea>
+		<p><textarea id="country-name" rows="1" cols ="20">thailand</textarea></p>
 		<button onclick="makeCountryRequest()">Update Country</button>
 	</p>
 	<h3>Sunrise and Sunset Example</h3>
 	<p> <!-- paragraph marker added here for spacing -->
-		<p class="selected-country">no country selected</p>
+		<p class="selected-country">no country selected from REST example</p>
 		<p class="country-data" id="sunset-time">no data</p>
 		<button onclick="makeSunriseSunsetRequest()">Get Sunrise and Sunset Data</button>
 	</p>
-	<h3>Open Notify Example</h3>
+	<h3>Open Notify (ISS) Example</h3>
 	<p> <!-- paragraph marker added here for spacing -->
-		<p class="selected-country">no country selected</p>
+		<p class="selected-country">no country selected from REST example</p>
 		<p class="country-data" id="iss-time">no data</p>
 		<button onclick="makeISSRequest()">Get Next ISS Passover Data</button>
 	</p>
 	<h3>Star Wars Example</h3>
 	<p> <!-- paragraph marker added here for spacing -->
-		<textarea id="sw-character" rows="1" cols ="20">luke</textarea><button onclick="makeSWRequest()">Get Character Info</button>
 		<p id="sw-info">no data</p>
+		<p><textarea id="sw-character" rows="1" cols ="20">luke</textarea></p>
+		<button onclick="makeSWRequest()">Get Character Info</button>
 	</p>
 	<h3>Music Brainz Example</h3>
 	<p> <!-- paragraph marker added here for spacing -->
-		<textarea id="music-artist" rows="1" cols ="20">queen</textarea><textarea id="music-genre" rows="1" cols ="20">rock</textarea><button onclick="makeArtistRequest()">Get Artist Info</button>
 		<p id="arist-info">no data</p>
+		<p>Artist: <textarea id="music-artist" rows="1" cols ="20">queen</textarea> Genre: <textarea id="music-genre" rows="1" cols ="20">rock</textarea></p>
+		<button onclick="makeArtistRequest()">Get Artist Info</button>
 	</p>
 	<h3>Pokemon API Example</h3>
 	<p> <!-- paragraph marker added here for spacing -->
-		<textarea id="berry-name" rows="1" cols ="20">cheri</textarea><button onclick="makeBerryRequest()">Get Type</button>
 		<p id="berry-info">no data</p>
+		<p><textarea id="berry-name" rows="1" cols ="20">cheri</textarea></p>
+		<button onclick="makeBerryRequest()">Get Type</button>
 	</p>
 	<footer>
 		<p><br/>---<br/></p>

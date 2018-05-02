@@ -6,8 +6,6 @@ var countryLat = invalidLonLat;
 
 function init() {
 	
-	var date = new Date(1523416302*1000);
-	document.getElementById("iss-time").innerHTML = date.toString();
 }
 
 //http://api.citygridmedia.com/content/places/v2/search/where?what=pizza&sort=highestrated&where=chicago,IL&publisher=test
