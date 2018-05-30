@@ -119,7 +119,7 @@ function processISSRequest(issInformation) {
 }
 
 function makeSWRequest() {
-	var character = document.getElementById("sw-character").innerHTML;
+	var character = document.getElementById("sw-character").value;
 
 	console.log(character);
 
@@ -141,8 +141,8 @@ function processSWRequest(swInformation) {
 }
 
 function makeArtistRequest() {
-	var artist = document.getElementById("music-artist").innerHTML;
-	var genre = document.getElementById("music-genre").innerHTML;
+	var artist = document.getElementById("music-artist").value;
+	var genre = document.getElementById("music-genre").value;
 
 	//console.log(artist);
 
@@ -164,7 +164,7 @@ function processArtistRequest(artistInformation) {
 }
 
 function makeBerryRequest() {
-	var berry = document.getElementById("berry-name").innerHTML;
+	var berry = document.getElementById("berry-name").value;
 
 	console.log(berry);
 
