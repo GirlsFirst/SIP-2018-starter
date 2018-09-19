@@ -181,8 +181,8 @@ function makeBerryRequest() {
 }
 
 function processBerryRequest(berryInformation) {
-	//console.log(berryInformation);
-	document.getElementById("berry-info").innerHTML = "Natural Gift: " + berryInformation.natural_gift_type.name + " at Power: " + berryInformation.natural_gift_power;
+	console.log(berryInformation);
+	//document.getElementById("berry-info").innerHTML = berryInformation.artists[0].name + " started in " + artistInformation.artists[0]["life-span"].begin;
 }
 
 window.onload = init;
