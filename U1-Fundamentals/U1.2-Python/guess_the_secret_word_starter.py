@@ -29,3 +29,4 @@ while fails < maxfails:
 	print(current_word)
 
 	fails = fails+1
+	print("You have " + str(maxfails - fails) + " tries left!")
